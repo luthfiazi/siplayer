@@ -24,11 +24,11 @@
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form role="form">
+                <form role="form" action="<?php echo base_url()?>Test/add" method="POST">
                 <div class="box-body">
                     <div class="form-group">
                     <label for="exampleInputEmail1">No Punggung</label>
-                    <input type="text" class="form-control" name="no_punggung" id="exampleInputEmail1" placeholder="Masukkan No Punggung">
+                    <input type="number" class="form-control" name="no_punggung" id="exampleInputEmail1" placeholder="Masukkan No Punggung">
                     </div>
                     <div class="form-group">
                     <label for="exampleInputEmail1">Nama Lengkap</label>

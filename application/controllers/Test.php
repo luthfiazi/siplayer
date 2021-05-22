@@ -25,4 +25,18 @@ class Test extends CI_Controller {
 		$this->load->view('tambah_data');
 		$this->load->view('bottom');
 	}
+
+	public function add()
+	{
+		$data = array(
+			'no_punggung' => $this->input->post('no_punggung'),
+			'nama_lengkap' => $this->input->post('nama_lengkap'),
+			'umur' => $this->input->post('umur'),
+			'asal_club' => $this->input->post('asal_club'),
+			'negara' => $this->input->post('negara')
+		);
+		if($this->db->insert('tbl_pemain', $data)){
+			echo "<script>window.location.href='".base_url()."Test"."';</script>";
+		}
+	}
 }
